@@ -9,9 +9,7 @@ public class LoginPage {
 	WebDriver driver;
 	//this a commit test by Gaurav
 	public LoginPage(WebDriver ldriver)
-	{
-		this.driver=ldriver;
-	}
+	{this.driver=ldriver;}
 	@FindBy(xpath="//input[@name='email1']") WebElement uname;
 	
 	@FindBy(xpath="//input[@name='password']") WebElement pass;
