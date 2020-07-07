@@ -17,7 +17,6 @@ public class LoginPage {
 	@FindBy(xpath="//input[@name='password']") WebElement pass;
 	
 	@FindBy(xpath="//div[text()='Login']") WebElement logInButton;
-	
 	public void loginToCRM(String usernameApplication, String passwordApplication)
 	{
 		try {
@@ -30,5 +29,4 @@ public class LoginPage {
 		uname.sendKeys(usernameApplication);
 		pass.sendKeys(passwordApplication);
 		logInButton.click();}
-
 }
