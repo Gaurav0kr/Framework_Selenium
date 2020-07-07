@@ -12,7 +12,6 @@ public class LoginPage {
 	{
 		this.driver=ldriver;
 	}
-	
 	@FindBy(xpath="//input[@name='email1']") WebElement uname;
 	
 	@FindBy(xpath="//input[@name='password']") WebElement pass;
@@ -30,7 +29,6 @@ public class LoginPage {
 		}
 		uname.sendKeys(usernameApplication);
 		pass.sendKeys(passwordApplication);
-		logInButton.click();
-	}
+		logInButton.click();}
 
 }
