@@ -41,13 +41,13 @@ public class BaseClass extends ExcelDataProvider {
 	Reporter.log("Setting up report and Test can be started", true);
 	
 	}
-	@Parameters("browser")
+	
 	@BeforeTest
 	public void setup(String browser) 
 	{
 		
-	//driver = BrowserFactory.startApplication(driver, "Chrome", excel.getStringData(1, 0, 0));
-		driver = BrowserFactory.startApplication(driver, browser, excel.getStringData(1, 0, 0));
+		driver = BrowserFactory.startApplication(driver, "Chrome", excel.getStringData(1, 0, 0));
+		//driver = BrowserFactory.startApplication(driver, browser, excel.getStringData(1, 0, 0));
 		
 	}
 

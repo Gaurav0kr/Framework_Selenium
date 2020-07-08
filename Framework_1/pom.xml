@@ -61,10 +61,7 @@
             <suiteXmlFile>XMLfiles/testng.xml</suiteXmlFile>
           </suiteXmlFiles>
           
-          
-          <systemPropertyVariables>
-           <executionBrowser>Chrome/${browser}</executionBrowser>
-          </systemPropertyVariables>
+   
         </configuration>
       </plugin>
     
