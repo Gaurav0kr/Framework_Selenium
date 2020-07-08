@@ -58,12 +58,12 @@
         <version>3.0.0-M5</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>XMLfiles/${xmlFiles}</suiteXmlFile>
+            <suiteXmlFile>XMLfiles/testng.xml</suiteXmlFile>
           </suiteXmlFiles>
           
           
           <systemPropertyVariables>
-           <executionBrowser>Chromr/${browser}</executionBrowser>
+           <executionBrowser>Chrome/${browser}</executionBrowser>
           </systemPropertyVariables>
         </configuration>
       </plugin>
