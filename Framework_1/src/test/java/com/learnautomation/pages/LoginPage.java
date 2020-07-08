@@ -10,11 +10,11 @@ public class LoginPage {
 	//this a commit test by Gaurav
 	public LoginPage(WebDriver ldriver)
 	{this.driver=ldriver;}
-	@FindBy(xpath="//input[@name='email1']") WebElement uname;
+	@FindBy(xpath="//input[@name='username']") WebElement uname;
 	
 	@FindBy(xpath="//input[@name='password']") WebElement pass;
 	
-	@FindBy(xpath="//div[text()='Login']") WebElement logInButton;
+	@FindBy(xpath="//input[@type='submit']") WebElement logInButton;
 	public void loginToCRM(String usernameApplication, String passwordApplication)
 	{
 		try {
@@ -26,5 +26,6 @@ public class LoginPage {
 		}
 		uname.sendKeys(usernameApplication);
 		pass.sendKeys(passwordApplication);
-		logInButton.click();}
+		//logInButton.click();
+		}
 }

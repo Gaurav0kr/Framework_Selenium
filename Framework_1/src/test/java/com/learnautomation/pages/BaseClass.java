@@ -10,6 +10,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -40,10 +41,14 @@ public class BaseClass extends ExcelDataProvider {
 	Reporter.log("Setting up report and Test can be started", true);
 	
 	}
+	@Parameters("browser")
 	@BeforeTest
-	public void setup() 
+	public void setup(String browser) 
 	{
-	driver = BrowserFactory.startApplication(driver, "Chrome", excel.getStringData(1, 0, 0));
+		
+	//driver = BrowserFactory.startApplication(driver, "Chrome", excel.getStringData(1, 0, 0));
+		driver = BrowserFactory.startApplication(driver, browser, excel.getStringData(1, 0, 0));
+		
 	}
 
 	
