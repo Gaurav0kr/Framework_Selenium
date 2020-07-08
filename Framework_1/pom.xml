@@ -63,7 +63,7 @@
           
           
           <systemPropertyVariables>
-           <executionBrowser>${browser}</executionBrowser>
+           <executionBrowser>Chromr/${browser}</executionBrowser>
           </systemPropertyVariables>
         </configuration>
       </plugin>
