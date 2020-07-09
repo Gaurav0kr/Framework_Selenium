@@ -43,7 +43,7 @@ public class BaseClass extends ExcelDataProvider {
 	}
 	
 	@BeforeTest
-	public void setup(String browser) 
+	public void setup()
 	{
 		
 		driver = BrowserFactory.startApplication(driver, "Chrome", excel.getStringData(1, 0, 0));
